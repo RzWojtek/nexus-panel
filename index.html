@@ -450,6 +450,59 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}
 .hljs-comment,.hljs-quote{color:#5d6b97;font-style:italic}.hljs-title,.hljs-function .hljs-title,.hljs-title.function_{color:#3fe0ff}.hljs-attr,.hljs-attribute,.hljs-property{color:#7fb0ff}
 .hljs-type,.hljs-class .hljs-title,.hljs-title.class_{color:#ff7bc4}.hljs-variable,.hljs-params{color:#e9eeff}.hljs-meta,.hljs-tag{color:#8c9bc8}.hljs-name,.hljs-selector-class{color:#ff7bc4}.hljs-section{color:#3fe0ff;font-weight:600}
 @media (max-width:720px){.gh-grid{grid-template-columns:1fr}.gh-row{grid-template-columns:22px minmax(0,1fr) auto 30px;gap:8px;padding:0 6px}.gh-top .btn{padding:7px 10px}.gh-br select{max-width:120px}.gh-code{max-height:64vh}}
+/* ---------- v2.2 ---------- */
+.g2x{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+mark{background:rgba(255,181,71,.28);color:#fff;border-radius:3px;padding:0 1px}
+.rn-date{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.rn-date .txt{width:auto;font-family:var(--f-mono)}
+.rn-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.rn-tile{display:flex;flex-direction:column;gap:8px;text-align:left;border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(10,18,42,.55);color:var(--fg);cursor:pointer;min-width:0}
+.rn-tile:hover{border-color:var(--line-hi)}.rn-tile.bad{border-color:rgba(255,93,125,.4);box-shadow:inset 0 0 0 1px rgba(255,93,125,.08),0 0 22px -12px rgba(255,93,125,.6)}
+.rn-h{display:flex;justify-content:space-between;align-items:center;gap:8px;overflow-wrap:anywhere}
+.rn-ws{display:flex;flex-wrap:wrap;gap:5px}
+.rn-w{font-family:var(--f-mono);font-size:11px;padding:3px 7px;border-radius:7px;border:1px solid var(--line);background:rgba(4,8,22,.5)}
+.rn-w i{font-style:normal;color:var(--green)}.rn-w i.f{color:var(--red)}.rn-w i.s{color:var(--dim)}
+.rn-w.b{border-color:rgba(255,93,125,.45)}.rn-w.m{border-color:rgba(255,181,71,.45)}
+.rn-err{font-size:12px;color:#ffb0bf;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rn-ok{font-size:12px;color:var(--dim)}
+.rn-e{display:flex;gap:10px;padding:8px 0;border-top:1px solid rgba(27,42,86,.6);overflow-wrap:anywhere}.rn-e:first-child{border-top:0}
+.rn-n{font-family:var(--f-mono);font-weight:600;color:var(--red);min-width:34px}
+.am-list{display:flex;flex-direction:column}
+.am-row{display:grid;grid-template-columns:minmax(140px,1.2fr) minmax(0,2.4fr) 120px 170px;gap:14px;align-items:center;padding:10px 6px;border:0;border-top:1px solid rgba(27,42,86,.6);background:none;color:var(--fg);text-align:left;cursor:pointer;width:100%}
+.am-row:first-child{border-top:0}.am-row:hover{background:rgba(63,224,255,.04)}
+.am-n,.am-v,.am-t{display:flex;flex-direction:column;gap:3px;min-width:0;overflow-wrap:anywhere}
+.am-v b{font-family:var(--f-mono);font-size:14px}.am-sp{min-width:0}
+.am-big{border:1px solid var(--line);border-radius:12px;padding:8px;background:#060c1f}
+.rs-auto{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.si-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));margin-top:12px}
+.si-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(10,18,42,.55);display:flex;flex-direction:column;gap:8px;min-width:0}
+.si-card.bad{border-color:rgba(255,93,125,.45);box-shadow:0 0 22px -12px rgba(255,93,125,.6)}.si-card.warn{border-color:rgba(255,181,71,.4)}.si-card.ok{border-color:rgba(55,227,143,.25)}
+.si-top{display:flex;gap:10px;align-items:flex-start}.si-fav{width:22px;height:22px;border-radius:5px;flex:none;margin-top:2px;background:rgba(255,255,255,.05)}
+.si-t{display:flex;flex-direction:column;min-width:0;flex:1;overflow-wrap:anywhere}.si-t a{color:var(--cyan)}
+.si-st,.si-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.si-st .pill,.am-t .pill{white-space:normal;max-width:100%;overflow-wrap:anywhere}.si-title{color:var(--fg);overflow-wrap:anywhere}
+.cs-cs{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.cs-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:18px 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}.cs-h h3{margin:0;font-family:var(--f-display);font-size:15px}
+.cs-root{margin-bottom:12px}.cs-rn{color:var(--cyan);font-size:12px;margin-bottom:6px;overflow-wrap:anywhere}
+.cs-file{border:1px solid var(--line);border-radius:10px;margin-bottom:8px;overflow:hidden}
+.cs-fn{padding:7px 10px;background:rgba(10,18,42,.7);font-size:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;overflow-wrap:anywhere}
+.cs-gh{margin-left:auto;padding:4px 9px;font-size:11.5px}
+.cs-line{display:grid;grid-template-columns:48px minmax(0,1fr);gap:8px;width:100%;border:0;border-top:1px solid rgba(27,42,86,.5);background:#060c1f;color:#d6def9;text-align:left;padding:5px 10px;cursor:pointer;font:12px/1.5 var(--f-mono)}
+.cs-line:hover:not(:disabled){background:#0a1430}.cs-line:disabled{cursor:default}
+.cs-ln{color:var(--dim);text-align:right}.cs-tx{white-space:pre-wrap;overflow-wrap:anywhere}
+.cs-frag{margin:0;padding:8px 10px;background:#060c1f;font:12px/1.5 var(--f-mono);white-space:pre-wrap;overflow-wrap:anywhere;border-top:1px solid rgba(27,42,86,.5);color:#d6def9}
+.cs-hit{background:rgba(255,181,71,.18);display:inline-block;width:100%}
+.cl-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;border:1px solid var(--line-hi);border-radius:12px;background:rgba(8,14,36,.94);backdrop-filter:blur(8px)}
+.cl-tools{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0 8px}
+.cl-keep{width:64px;padding:4px 8px}
+.cl-grp{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}.cl-gh{overflow-wrap:anywhere;font-size:12.5px}
+.cl-list{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cl-row{display:grid;grid-template-columns:22px minmax(0,1fr) 90px 130px 86px;gap:10px;align-items:center;padding:7px 10px;border-top:1px solid rgba(27,42,86,.55);cursor:pointer;font-size:12.5px}
+.cl-row:first-child{border-top:0}.cl-row:hover{background:rgba(63,224,255,.04)}.cl-row.on{background:rgba(255,93,125,.07)}
+.cl-row input{width:16px;height:16px;accent-color:#ff5d7d}
+.cl-nm{display:flex;flex-direction:column;gap:2px;min-width:0;overflow-wrap:anywhere}.cl-nm .pill{align-self:flex-start}.cl-nm>span:first-child{display:inline}.cl-note{color:var(--dim)}
+.cl-sz{text-align:right}.cl-dt{color:var(--muted)}
+.cl-conf{max-height:46vh;overflow:auto;display:grid;gap:4px;border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0;overflow-wrap:anywhere}
+@media (max-width:980px){.g2x{grid-template-columns:1fr}.am-row{grid-template-columns:minmax(0,1fr) 110px}.am-sp{grid-column:1/-1;order:3}.am-t{grid-column:1/-1;order:4;flex-direction:row;flex-wrap:wrap;align-items:center}}
+@media (max-width:720px){.rn-grid,.si-grid{grid-template-columns:1fr}.cl-row{grid-template-columns:22px minmax(0,1fr) 76px}.cl-dt{display:none}.cl-op{grid-column:2/-1}.rn-date{width:100%}.rn-date .txt{flex:1;min-width:0}}
 </style>
 </head>
 <body>
@@ -669,6 +722,57 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}
       <div id="ghBody"></div>
     </section>
 
+    <section class="page" id="p-runner" hidden>
+      <div class="phead"><div><div class="eyebrow">Automation results</div><h2>Wynik dnia runnera</h2><p id="rnMeta">Które projekty przeszły, które nie i dlaczego.</p></div>
+        <div class="rn-date"><button class="btn ghost" id="rnPrev" aria-label="Poprzedni dzień">◀</button><input class="txt" type="date" id="rnDay" aria-label="Dzień"><button class="btn ghost" id="rnNext" aria-label="Następny dzień">▶</button><button class="btn ghost" id="rnToday">Dziś</button></div></div>
+      <div class="g4" id="rnKpi"></div>
+      <article class="card" style="margin-top:12px"><div class="chead"><h3>Projekty</h3><span class="meta">kliknij, żeby zobaczyć wszystkie przebiegi</span></div><div class="rn-grid" id="rnGrid"></div></article>
+      <div class="g2x" style="margin-top:12px">
+        <article class="card"><div class="chead"><h3>Najczęstsze błędy</h3></div><div id="rnErr"></div></article>
+        <article class="card"><div class="chead"><h3>Bez przebiegów dziś</h3><span class="meta">działały w ostatnich 7 dniach</span></div><div id="rnSilent"></div></article>
+      </div>
+    </section>
+
+    <section class="page" id="p-appmem" hidden>
+      <div class="phead"><div><div class="eyebrow">Memory trends</div><h2>Pamięć aplikacji</h2><p id="amMeta">Zużycie RAM każdej aplikacji PM2 w czasie i podejrzenie wycieków pamięci.</p></div>
+        <div class="gh-tabs" id="amRange"></div></div>
+      <div class="g4" id="amKpi"></div>
+      <article class="card" style="margin-top:12px"><div class="chead"><h3>Aplikacje</h3><span class="meta">kliknij, żeby zobaczyć duży wykres</span></div><div class="am-list" id="amList"></div>
+        <p class="small" style="margin:12px 0 0">„Możliwy wyciek” = pamięć rośnie równo i stale od ostatniego restartu (co najmniej 2 h, +20 MB i +20%). Pionowe kreski na wykresie to restarty.</p></article>
+    </section>
+
+    <section class="page" id="p-restore" hidden>
+      <div class="phead"><div><div class="eyebrow">Backup verification</div><h2>Test odtworzenia kopii</h2><p>Panel odtwarza kopię SQL do tymczasowej bazy, liczy tabele i wiersze, porównuje z działającą bazą i usuwa tymczasową bazę.</p></div>
+        <div class="gh-acts"><label class="rs-auto"><button class="sw" id="rsAuto" role="switch" aria-checked="true" aria-label="Test co tydzień"></button><span>co tydzień (niedziela 4:00)</span></label><button class="btn" id="rsAll">Testuj wszystkie teraz</button></div></div>
+      <div class="g3" id="rsKpi"></div>
+      <article class="card" id="rsRun" style="margin-top:12px" hidden><div class="chead"><h3>Trwa test…</h3><span class="meta" id="rsProg"></span></div><div class="jobout" id="rsLog" style="min-height:0;max-height:260px"></div></article>
+      <article class="card" style="margin-top:12px"><div class="chead"><h3>Kopie SQL do sprawdzenia</h3><span class="meta">najnowsza kopia każdego rodzaju</span></div><div class="tablewrap"><table><thead><tr><th>Plik kopii</th><th>Rozmiar</th><th>Z dnia</th><th>Ostatni test</th><th></th></tr></thead><tbody id="rsCand"></tbody></table></div></article>
+      <article class="card" style="margin-top:12px"><div class="chead"><h3>Historia testów</h3></div><div class="tablewrap"><table><thead><tr><th>Kiedy</th><th>Plik</th><th>Wynik</th><th>Szczegóły</th><th>Czas</th></tr></thead><tbody id="rsHist"></tbody></table></div>
+        <p class="small" style="margin:12px 0 0">Bezpieczeństwo: odtwarzanie działa na osobnym użytkowniku MySQL <span class="mono">nexus_rt</span>, który ma dostęp tylko do tymczasowych baz <span class="mono">nxrt_*</span>. Nawet nietypowa kopia nie może zmienić Twoich baz. Triggery i procedury są pomijane (wymagałyby uprawnień administratora) — sprawdzane są tabele i dane.</p></article>
+    </section>
+
+    <section class="page" id="p-sites" hidden>
+      <div class="phead"><div><div class="eyebrow">Uptime</div><h2>Strony i frontendy</h2><p id="siMeta">Czy Twoje strony na Vercelu i domeny na VPS się otwierają.</p></div><button class="btn ghost" id="siCheck">Sprawdź teraz</button></div>
+      <div class="g4" id="siKpi"></div>
+      <article class="card" id="siVercel" style="margin-top:12px" hidden></article>
+      <article class="card" style="margin-top:12px"><div class="toolbar"><input class="txt grow" id="siUrl" placeholder="Dodaj stronę, np. https://moja-apka.vercel.app" aria-label="Adres strony"><input class="txt" id="siName" placeholder="Nazwa (opcjonalnie)" aria-label="Nazwa" style="max-width:200px"><button class="btn" id="siAdd">Dodaj</button></div>
+        <div class="gh-filt" id="siFilt" style="margin-top:10px"></div><div class="si-grid" id="siGrid"></div><div id="siFoot" class="gh-cbar small"></div></article>
+    </section>
+
+    <section class="page" id="p-search" hidden>
+      <div class="phead"><div><div class="eyebrow">Code search</div><h2>Szukaj w kodzie</h2><p>Szuka tekstu we wszystkich aplikacjach na VPS i w Twoich repozytoriach na GitHubie. Treść plików z sekretami jest ukrywana.</p></div></div>
+      <article class="card"><form class="toolbar" id="csForm"><input class="txt grow" id="csQ" placeholder="np. nazwa funkcji, tekst błędu, adres API…" aria-label="Szukany tekst" autocomplete="off">
+        <select class="txt" id="csWhere" aria-label="Gdzie szukać"><option value="both">VPS + GitHub</option><option value="vps">tylko VPS</option><option value="github">tylko GitHub</option></select>
+        <label class="cs-cs"><input type="checkbox" id="csCs"> wielkość liter</label><button class="btn" id="csBtn">Szukaj</button></form>
+        <div id="csOut"><p class="muted" style="margin:14px 0 0">Wpisz co najmniej 2 znaki.</p></div></article>
+    </section>
+
+    <section class="page" id="p-cleanup" hidden>
+      <div class="phead"><div><div class="eyebrow">Disk cleanup</div><h2>Sprzątanie</h2><p>Zaznacz, co chcesz usunąć lub wyczyścić. Nic nie dzieje się bez Twojego potwierdzenia.</p></div><button class="btn ghost" id="clRef">Odśwież listę</button></div>
+      <div class="cl-bar" id="clBar"><div><b id="clSel">Nic nie zaznaczono</b><span class="small" id="clSize"></span></div><div class="gh-acts"><button class="btn ghost" id="clNone">Odznacz wszystko</button><button class="btn danger" id="clGo" disabled>Usuń zaznaczone</button></div></div>
+      <div id="clCats"></div>
+    </section>
+
     <section class="page" id="p-env" hidden>
       <div class="phead"><div><div class="eyebrow">Configuration files</div><h2>Pliki .env</h2><p>Edycja ustawień aplikacji. Wartości są zamaskowane, przed każdym zapisem robiona jest kopia pliku.</p></div></div>
       <article class="card"><div class="toolbar"><input class="txt grow" id="envQ" placeholder="Szukaj pliku lub aplikacji…" aria-label="Szukaj"></div><div class="tablewrap"><table><thead><tr><th>Plik</th><th>Aplikacja</th><th>Kluczy</th><th>Uprawnienia</th><th>Zmieniony</th></tr></thead><tbody id="envTbl"></tbody></table></div></article>
@@ -837,15 +941,21 @@ const I={
  file:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',
  repo:'<path d="M5.5 4.5a2 2 0 0 1 2-2h11v15h-11a2 2 0 0 0-2 2z"/><path d="M5.5 19.5a2 2 0 0 0 2 2h11v-4M9 6.5h6M9 10h4"/>',
  img:'<rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 18 5-5 4 4 2.5-2.5L20 19"/>',
+ mem:'<rect x="3" y="7" width="18" height="10" rx="1.6"/><path d="M7 10v4M11 10v4M15 10v4M6 17v2.5M10 17v2.5M14 17v2.5M18 17v2.5"/>',
+ rocket:'<path d="M12 15.5 8.5 12C10 7.5 13.5 4 20 4c0 6.5-3.5 10-8 11.5z"/><circle cx="14.6" cy="9.4" r="1.6"/><path d="M8.5 12 5 11.5 7.5 8.5h3M12 15.5l.5 3.5 3-2.5v-3M6.5 17.5c-1 1-1.5 3-1.5 3s2-.5 3-1.5"/>',
+ globe:'<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5z"/>',
+ search:'<circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/>',
+ trash:'<path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13M10.5 11v5.5M13.5 11v5.5"/>',
+ shieldok:'<path d="M12 3 19.5 6v6c0 4.6-3.1 8.1-7.5 9.5C7.6 20.1 4.5 16.6 4.5 12V6z"/><path d="M8.5 12.5h7M8.5 9.5h7M8.5 15.5h4"/>',
  broom:'<path d="M14 4 9.5 12M6 13h8l1.5 7h-11z"/><path d="M8 17v3M11 17v3"/>'
 };
 const svg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${I[k]}</svg>`;
 
 /* ---------- navigation ---------- */
-const TABS=[['Monitoring',[['dashboard','Dashboard','dashboard'],['timeline','Oś czasu','clock'],['system','System i PM2','sys'],['storage','Dyski i backupy','disk'],['mysql','MySQL','db']]],
- ['Automatyzacja',[['cron','Automatyzacje / Cron','cron'],['sessions','Sesje i cookies','cookie'],['xaccounts','Konta X','x']]],
- ['Infrastruktura',[['ssl','SSL i domeny','lock'],['firebase','Firebase','flame'],['logs','Logi','logs'],['security','Bezpieczeństwo','shield'],['keys','Klucze','key'],['git','Git','git'],['github','GitHub','repo']]],
- ['Narzędzia',[['skrypty','Skrypty','code'],['env','Pliki .env','file'],['dead','Porządki','broom']]],
+const TABS=[['Monitoring',[['dashboard','Dashboard','dashboard'],['timeline','Oś czasu','clock'],['system','System i PM2','sys'],['storage','Dyski i backupy','disk'],['restore','Test kopii','shieldok'],['appmem','Pamięć aplikacji','mem'],['mysql','MySQL','db']]],
+ ['Automatyzacja',[['cron','Automatyzacje / Cron','cron'],['runner','Wynik runnera','rocket'],['sessions','Sesje i cookies','cookie'],['xaccounts','Konta X','x']]],
+ ['Infrastruktura',[['ssl','SSL i domeny','lock'],['firebase','Firebase','flame'],['logs','Logi','logs'],['security','Bezpieczeństwo','shield'],['keys','Klucze','key'],['git','Git','git'],['github','GitHub','repo'],['sites','Strony','globe']]],
+ ['Narzędzia',[['skrypty','Skrypty','code'],['search','Szukaj w kodzie','search'],['cleanup','Sprzątanie','trash'],['env','Pliki .env','file'],['dead','Porządki','broom']]],
  ['Konfiguracja',[['ustawienia','Ustawienia','gear']]]];
 const FLAT=TABS.flatMap(g=>g[1]);
 const LABEL={dashboard:'Centrum dowodzenia'};FLAT.forEach(([id,l])=>{if(!LABEL[id])LABEL[id]=l;});
@@ -1423,9 +1533,161 @@ async function ghCheck(fresh){if(!GH.check||fresh){ghLoading('Sprawdzam repozyto
   $('#ghRecheck').onclick=()=>ghCheck(true).catch(e=>ghErr(e));
   $('#ghUnlink').onclick=e=>conf(e.currentTarget,'Na pewno? Kliknij ponownie',()=>api('/api/github/token',{method:'DELETE'}).then(()=>{toast('Odłączono GitHub — token usunięty z VPS');GH.repos=null;GH.check=null;GH.repo=null;badge('github','');loadGithub();}).catch(x=>toast(x.message)));}
 
+/* ---------- v2.2: wspólne ---------- */
+const MB=v=>v==null?'—':v>=1024?(v/1024).toFixed(2)+' GB':Math.round(v)+' MB';
+function lineSvg(series,{w=240,h=44,color='#3fe0ff',restarts=[],axis=false,id='x'+Math.random().toString(36).slice(2,7)}={}){
+  if(!series||series.length<2)return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none"><text x="${w/2}" y="${h/2+4}" text-anchor="middle" fill="#5d6b97" font-size="11">zbieram dane…</text></svg>`;
+  const L=axis?46:2,R=axis?10:2,T=axis?12:4,B=axis?24:4,iw=w-L-R,ih=h-T-B;
+  const t0=series[0][0],t1=series[series.length-1][0]||t0+1;let mn=Math.min(...series.map(p=>p[1])),mx=Math.max(...series.map(p=>p[1]));
+  if(axis){mn=0;}const pad=(mx-mn)*.12||5;mx+=pad;if(!axis)mn=Math.max(0,mn-pad);
+  const X=t=>L+(t-t0)/(t1-t0||1)*iw,Y=v=>T+ih-(v-mn)/(mx-mn||1)*ih;
+  const pts=series.map(p=>[X(p[0]),Y(p[1])]);const d=smooth(pts);
+  let g=`<defs><linearGradient id="lg${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:${color};stop-opacity:.45"/><stop offset="1" style="stop-color:${color};stop-opacity:0"/></linearGradient><filter id="lf${id}" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;
+  if(axis){for(let i=0;i<=4;i++){const v=mn+(mx-mn)*i/4,y=Y(v);g+=`<line x1="${L}" x2="${w-R}" y1="${y}" y2="${y}" style="stroke:var(--line)" stroke-dasharray="${i?'3 5':''}"/><text x="${L-6}" y="${y+3.5}" text-anchor="end" fill="#8c9bc8" font-size="10.5" font-family="JetBrains Mono,monospace">${Math.round(v)}</text>`;}
+    for(let i=0;i<=4;i++){const t=t0+(t1-t0)*i/4;g+=`<text x="${L+iw*i/4}" y="${h-6}" text-anchor="${i===0?'start':i===4?'end':'middle'}" fill="#8c9bc8" font-size="10.5" font-family="JetBrains Mono,monospace">${new Date(t).toLocaleString('pl-PL',(t1-t0)>864e5?{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}:{hour:'2-digit',minute:'2-digit'})}</text>`;}
+    g+=`<text x="${L}" y="${T-2}" fill="#5d6b97" font-size="10" font-family="JetBrains Mono,monospace">MB</text>`;}
+  for(const r of restarts){if(r<t0||r>t1)continue;const x=X(r);g+=`<line x1="${x}" x2="${x}" y1="${T}" y2="${T+ih}" stroke="#ffb547" stroke-width="1.2" stroke-dasharray="3 3" opacity=".85"/>`;}
+  g+=`<path d="${d} L${pts[pts.length-1][0]} ${T+ih} L${pts[0][0]} ${T+ih} Z" fill="url(#lg${id})"/><path d="${d}" fill="none" stroke="${color}" stroke-width="${axis?2.2:1.8}" stroke-linejoin="round" filter="url(#lf${id})"/>`;
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none" role="img" aria-label="wykres pamięci">${g}</svg>`;}
+const hl=(text,q,cs)=>{const t=esc(text);if(!q)return t;const e=esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');try{return t.replace(new RegExp(e,cs?'g':'gi'),m=>`<mark>${m}</mark>`);}catch(x){return t;}};
+
+/* ---------- 6. Wynik dnia runnera ---------- */
+const RN={day:null,d:null};
+const todayStr=()=>{const d=new Date();return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;};
+const shiftDay=(s,n)=>{const d=new Date(s+'T12:00:00');d.setDate(d.getDate()+n);return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;};
+const CLS={ok:['ok','OK'],fail:['bad','BŁĄD'],skip:['off','POMINIĘTE'],other:['warn','INNE']};
+async function loadRunner(){if(!RN.day)RN.day=todayStr();$('#rnDay').value=RN.day;$('#rnNext').disabled=RN.day>=todayStr();
+  const d=await api('/api/runner?day='+RN.day);RN.d=d;const t=d.totals,all=t.ok+t.fail,isToday=RN.day===todayStr();
+  $('#rnMeta').textContent=d.missing?`Nie znaleziono katalogu logów: ${d.dir}. Ustaw RUNNER_LOGS w /root/nexus-api/.env.`:`Źródło: ${d.dir} (linie podsumowania każdej akcji). ${isToday?'Odświeża się co minutę.':''}`;
+  $('#rnKpi').innerHTML=kpi('Udane',`<span style="color:var(--green)">${t.ok}</span>`,'akcji')+kpi('Błędy',t.fail?`<span style="color:var(--red)">${t.fail}</span>`:'0','akcji')+kpi('Pominięte',t.skip,'np. kolejka, cooldown')+kpi('Skuteczność',all?Math.round(t.ok/all*100)+'%':'—',`${d.projects.length} projektów`);
+  if(isToday)badge('runner',t.fail||'');
+  $('#rnGrid').innerHTML=d.projects.length?d.projects.map(p=>{const ws=Object.entries(p.wallets);return `<button class="rn-tile${p.fail?' bad':''}" data-rnp="${esc(p.project)}"><span class="rn-h"><b>${esc(p.project)}</b>${p.fail?pill('bad',p.fail+' błąd'):pill('ok','OK')}</span>
+    <span class="rn-ws">${ws.map(([w,x])=>`<span class="rn-w ${x.fail&&!x.ok?'b':x.fail?'m':'g'}" title="${esc(w)}: ${x.ok} OK, ${x.fail} błędów, ${x.skip} pominiętych">${esc(w)} <i>✓${x.ok}</i>${x.fail?` <i class="f">✗${x.fail}</i>`:''}${x.skip?` <i class="s">–${x.skip}</i>`:''}</span>`).join('')}</span>
+    ${p.lastFail?`<span class="rn-err">${esc(p.lastFail.time.slice(0,5))} ${esc(p.lastFail.wallet)} · ${esc(p.lastFail.msg||p.lastFail.status)}</span>`:`<span class="rn-ok">ostatnio ${esc((p.lastTime||'').slice(0,5))}</span>`}</button>`;}).join(''):`<p class="muted">Brak przebiegów ${isToday?'dziś':'tego dnia'}.</p>`;
+  $('#rnErr').innerHTML=d.errors.length?d.errors.map(e=>`<div class="rn-e"><span class="rn-n">${e.n}×</span><div><b>${esc(e.project)}</b> <span class="small">${e.wallets.map(esc).join(', ')} · ostatnio ${esc(e.last.slice(0,5))}</span><div class="small" style="color:var(--fg)">${esc(e.msg||'(bez opisu)')}</div></div></div>`).join(''):'<p class="muted">Brak błędów. 🎉</p>';
+  $('#rnSilent').innerHTML=isToday?(d.silent.length?d.silent.map(s=>`<div class="rn-e"><span class="rn-n" style="color:var(--amber)">!</span><div><b>${esc(s.project)}</b> <span class="mono small">${esc(s.wallet)}</span><div class="small">ostatni wpis ${ago(s.last)}</div></div></div>`).join(''):'<p class="muted">Wszystko, co działało w tym tygodniu, działało też dziś.</p>'):'<p class="muted">Dotyczy tylko dzisiejszego dnia.</p>';}
+$('#rnPrev').onclick=()=>{RN.day=shiftDay(RN.day,-1);loadRunner().catch(e=>toast(e.message));};
+$('#rnNext').onclick=()=>{if(RN.day<todayStr()){RN.day=shiftDay(RN.day,1);loadRunner().catch(e=>toast(e.message));}};
+$('#rnToday').onclick=()=>{RN.day=todayStr();loadRunner().catch(e=>toast(e.message));};
+$('#rnDay').onchange=e=>{if(e.target.value){RN.day=e.target.value>todayStr()?todayStr():e.target.value;loadRunner().catch(x=>toast(x.message));}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-rnp]');if(!b||!RN.d)return;const p=RN.d.projects.find(x=>x.project===b.dataset.rnp);if(!p)return;
+  gOpen(p.project,`${RN.day} · ${p.ok} OK · ${p.fail} błędów · ${p.skip} pominiętych${p.runsTotal>p.runs.length?` · pokazano ostatnie ${p.runs.length} z ${p.runsTotal}`:''}`,`<div class="tablewrap"><table><thead><tr><th>Godz.</th><th>Portfel</th><th>Akcja</th><th>Wynik</th><th>Opis</th><th>Czas</th></tr></thead><tbody>${p.runs.slice().reverse().map(r=>`<tr><td class="mono">${esc(r.time)}</td><td class="mono">${esc(r.wallet)}</td><td class="mono">${esc(r.action)}</td><td>${pill(CLS[r.cls][0],r.status)}</td><td class="small" style="color:var(--fg);min-width:220px">${esc(r.msg||'—')}${r.tx?`<br><span class="mono small">tx ${esc(r.tx.length>20?r.tx.slice(0,10)+'…'+r.tx.slice(-6):r.tx)}</span>`:''}</td><td class="mono">${r.sec!=null?dur(r.sec):'—'}</td></tr>`).join('')}</tbody></table></div>`,null,'🚀');});
+
+/* ---------- 12. Pamięć aplikacji ---------- */
+const AM={h:+LS.get('nexus_amh','24'),d:null};
+$('#amRange').innerHTML=[[6,'6 h'],[24,'24 h'],[72,'3 dni'],[168,'7 dni'],[336,'14 dni']].map(([h,l])=>`<button class="chip" data-amh="${h}" aria-pressed="${h===AM.h}">${l}</button>`).join('');
+$('#amRange').addEventListener('click',e=>{const b=e.target.closest('[data-amh]');if(!b)return;AM.h=+b.dataset.amh;LS.set('nexus_amh',String(AM.h));$$('[data-amh]').forEach(x=>x.setAttribute('aria-pressed',x===b));loadAppmem().catch(x=>toast(x.message));});
+async function loadAppmem(){const d=await api('/api/appmem?hours='+AM.h);AM.d=d;const leaks=d.apps.filter(a=>a.leak);
+  badge('appmem',leaks.length||'');
+  $('#amKpi').innerHTML=kpi('Aplikacji',d.apps.filter(a=>a.status==='online').length,'online w PM2')+kpi('Możliwy wyciek',leaks.length?`<span style="color:var(--red)">${leaks.length}</span>`:'0',leaks.map(a=>esc(a.name)).join(', ')||'brak')+kpi('RAM aplikacji PM2',MB(d.totalMB),'razem teraz')+kpi('Zbieram od',d.collectingSince?ago(d.collectingSince).replace(' temu',''):'—','zapis co minutę, 14 dni');
+  $('#amList').innerHTML=d.apps.map(a=>{const c=a.leak?'#ff5d7d':a.slopeMBh>1?'#ffb547':'#3fe0ff';return `<button class="am-row" data-amapp="${esc(a.name)}"><span class="am-n"><b>${esc(a.name)}</b><span class="small">${a.status==='online'?'':esc(a.status)+' · '}${a.restartsAt.length?a.restartsAt.length+' restart(ów) w tym okresie':'bez restartów'}</span></span>
+    <span class="am-sp">${lineSvg(a.series,{w:300,h:46,color:c,restarts:a.restartsAt})}</span>
+    <span class="am-v"><b>${MB(a.memNow)}</b><span class="small">${a.series.length?`${MB(a.min)} – ${MB(a.max)}`:''}</span></span>
+    <span class="am-t">${a.leak?pill('bad','MOŻLIWY WYCIEK'):a.series.length>2?(a.slopeMBh>1?pill('warn','↗ '+a.slopeMBh+' MB/h'):pill('ok','STABILNIE')):pill('off','ZA MAŁO DANYCH')}${a.leak?`<span class="small">+${a.slopeMBh} MB/h od ${a.segHours} h</span>`:''}</span></button>`;}).join('')||'<p class="muted">Brak aplikacji PM2.</p>';}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-amapp]');if(!b||!AM.d)return;const a=AM.d.apps.find(x=>x.name===b.dataset.amapp);if(!a)return;
+  const c=a.leak?'#ff5d7d':'#3fe0ff';
+  gOpen(a.name,`Pamięć RAM · ostatnie ${AM.h>=72?Math.round(AM.h/24)+' dni':AM.h+' h'} · teraz ${MB(a.memNow)} · CPU śr. ${a.cpuAvg}%`,`<div class="am-big">${lineSvg(a.series,{w:900,h:300,color:c,restarts:a.restartsAt,axis:true})}</div>
+   <div class="g3" style="margin-top:12px">${kpi('Trend od ostatniego restartu',(a.slopeMBh>0?'+':'')+a.slopeMBh+' MB/h',`dopasowanie ${Math.round(a.r2*100)}% · ${a.segHours} h danych`)+kpi('Zakres',`${MB(a.min)} – ${MB(a.max)}`,'w wybranym okresie')+kpi('Restarty',a.restartsAt.length,'pomarańczowe kreski')}</div>
+   ${a.leak?`<p style="margin:12px 0 0;color:var(--amber)">Pamięć rośnie równo od ${a.segHours} h. Jeśli aplikacja ma ustawiony limit (np. <span class="mono">max_memory_restart</span>), PM2 zrestartuje ją sam. Jeśli nie, warto to zgłosić przy następnej zmianie kodu tej aplikacji.</p>`:''}`,null,'📈');});
+
+/* ---------- 18. Test odtworzenia kopii ---------- */
+let rsTimer=null;const RSST={ok:['ok','OK'],warn:['warn','UWAGA'],fail:['bad','BŁĄD'],skip:['off','POMINIĘTO']};
+async function loadRestore(){const d=await api('/api/restore');setSw($('#rsAuto'),d.enabled);
+  const last=d.candidates.map(c=>c.last).filter(Boolean),bad=last.filter(l=>l.status==='fail'||l.status==='warn').length;
+  badge('restore',bad||'');
+  $('#rsKpi').innerHTML=kpi('Kopii SQL',d.candidates.length,'najnowsza każdego rodzaju')+kpi('Problemy',bad?`<span style="color:var(--red)">${bad}</span>`:'0','w ostatnich testach')+kpi('Ostatni pełny test',d.lastRun?ago(d.lastRun):'nigdy',d.enabled?'automatycznie w niedzielę 4:00':'automat wyłączony');
+  $('#rsCand').innerHTML=d.candidates.length?d.candidates.map(c=>{const l=c.last,s=l?RSST[l.status]||['off',l.status]:null;return `<tr><td class="path">${esc(c.file)}${c.app?`<br><span class="small">${esc(c.app)}</span>`:''}</td><td class="num">${fmtB(c.size)}</td><td class="muted">${fdt(c.mtime)}</td><td>${l?`${pill(s[0],s[1])} <span class="small">${ago(l.ts)}</span><div class="small" style="color:var(--fg);max-width:420px">${esc(l.msg)}</div>`:'<span class="muted">jeszcze nie testowana</span>'}</td><td><button class="btn ghost" data-rsone="${esc(c.file)}"${d.running?' disabled':''}>Testuj</button></td></tr>`;}).join(''):'<tr><td colspan="5" class="muted">Nie znaleziono kopii SQL (.sql, .sql.gz). Lista pochodzi ze skanu dysku.</td></tr>';
+  $('#rsHist').innerHTML=d.history.length?d.history.map(h=>{const s=RSST[h.status]||['off',h.status];const det=h.detail&&h.detail.tables&&h.detail.tables.length?`<details><summary class="small">tabele (${h.detail.tables.length})</summary><div class="small mono">${h.detail.tables.map(t=>`${esc(t.t)}: ${t.n}${t.live!=null?` (teraz ≈${t.live})`:''}`).join('<br>')}</div></details>`:'';return `<tr><td class="mono">${fdt(h.ts)}</td><td class="path">${esc(h.file.split('/').pop())}${h.db?`<br><span class="small">baza: ${esc(h.db)}</span>`:''}</td><td>${pill(s[0],s[1])}</td><td class="small" style="color:var(--fg)">${esc(h.msg)}${det}</td><td class="mono">${dur((h.took||0)/1000)}</td></tr>`;}).join(''):'<tr><td colspan="5" class="muted">Brak testów.</td></tr>';
+  $('#rsRun').hidden=!d.running;$('#rsAll').disabled=!!d.running;
+  if(d.running){$('#rsProg').textContent=`${d.running.done}/${d.running.total} · od ${ago(d.running.started).replace(' temu','')}`;$('#rsLog').textContent=d.log.join('\n');$('#rsLog').scrollTop=1e9;clearTimeout(rsTimer);rsTimer=setTimeout(()=>{if(current==='restore')loadRestore().catch(()=>{});},2500);}}
+$('#rsAll').onclick=e=>conf(e.currentTarget,'Na pewno? Kliknij ponownie',()=>api('/api/restore/run',{method:'POST',body:{}}).then(r=>{toast(`Start testu: ${r.total} kopii`);loadRestore();}).catch(x=>toast(x.message)));
+document.addEventListener('click',e=>{const b=e.target.closest('[data-rsone]');if(!b)return;busyBtn(b,async()=>{await api('/api/restore/run',{method:'POST',body:{file:b.dataset.rsone}});toast('Test uruchomiony');await loadRestore();});});
+$('#rsAuto').onclick=async e=>{const v=e.currentTarget.getAttribute('aria-checked')!=='true';setSw(e.currentTarget,v);try{await api('/api/restore/settings',{method:'POST',body:{enabled:v}});toast(v?'Test co tydzień włączony':'Test co tydzień wyłączony');}catch(x){toast(x.message);setSw(e.currentTarget,!v);}};
+
+/* ---------- 28. Strony ---------- */
+const SI={d:null,f:'all'};const SRC={vercel:'VERCEL',github:'GITHUB',manual:'DODANA',nginx:'VPS'};
+async function loadSites(fresh){if(fresh)$('#siGrid').innerHTML='<div class="gh-load"><span class="gh-spin"></span>Sprawdzam strony…</div>';
+  const d=await api('/api/sites'+(fresh?'?fresh=1':''));SI.d=d;const it=d.items.filter(x=>x.url),ok=it.filter(x=>x.check&&x.check.level==='ok').length,bad=it.filter(x=>x.check&&x.check.level==='bad').length,warn=it.filter(x=>x.check&&x.check.level==='warn').length;
+  badge('sites',bad||'');
+  $('#siMeta').textContent=`Sprawdzane z VPS co 15 minut${d.checkedAt?' · ostatnio '+ago(d.checkedAt):''}. Źródła: Vercel${d.vercel.configured?'':' (niepodłączony)'}, strona projektu z GitHuba, domeny z nginx i dodane ręcznie.`;
+  $('#siKpi').innerHTML=kpi('Działa',`<span style="color:var(--green)">${ok}</span>`,`z ${it.length} adresów`)+kpi('Nie działa',bad?`<span style="color:var(--red)">${bad}</span>`:'0','błąd, brak odpowiedzi')+kpi('Zablokowane / 4xx',warn,'np. logowanie Vercel')+kpi('Wdrożenia Vercel',d.items.filter(x=>x.source==='vercel'&&x.deploy&&/ERROR|CANCELED/i.test(x.deploy.state)).length?`<span style="color:var(--red)">${d.items.filter(x=>x.source==='vercel'&&x.deploy&&/ERROR|CANCELED/i.test(x.deploy.state)).length} błąd</span>`:d.vercel.configured?'OK':'—',d.vercel.configured?'konto '+esc(d.vercel.account||''):'podłącz Vercel');
+  const v=$('#siVercel');v.hidden=false;
+  v.innerHTML=d.vercel.configured?`<div class="gh-cbar" style="margin:0"><span>Vercel podłączony${d.vercel.account?': <b>'+esc(d.vercel.account)+'</b>':''}${d.vercel.error?` · <span style="color:var(--red)">${esc(d.vercel.error)}</span>`:''}</span><button class="btn ghost" id="siVOff">Odłącz Vercel</button></div>`
+   :`<details><summary><b>Podłącz Vercel</b> <span class="small">(opcjonalnie — wtedy panel sam znajdzie wszystkie Twoje projekty i ich domeny)</span></summary>
+    <ol class="gh-steps" style="margin-top:10px"><li>Otwórz <a href="https://vercel.com/account/settings/tokens" target="_blank" rel="noopener">vercel.com → Account Settings → Tokens</a>.</li><li><b>Token name:</b> <span class="mono">nexus-panel</span>, <b>Scope:</b> Twoje konto, <b>Expiration:</b> najdłuższa dostępna. Kliknij <b>Create</b>.</li><li>Skopiuj token i wklej poniżej.</li></ol>
+    <p class="small" style="color:var(--amber)">Uwaga: Vercel nie pozwala zrobić tokenu „tylko do odczytu” — token daje pełny dostęp do konta. Panel używa go wyłącznie do odczytu listy projektów i domen, a token leży tylko na VPS w /root/nexus-api/.env. Jeśli wolisz bez tokenu, dodawaj adresy ręcznie powyżej.</p>
+    <form class="gh-tokf" id="siVForm" autocomplete="off"><input class="txt grow" id="siVTok" type="password" placeholder="token Vercel" aria-label="Token Vercel"><button class="btn" id="siVBtn">Zapisz i sprawdź</button></form></details>`;
+  const off=$('#siVOff');if(off)off.onclick=e=>conf(e.currentTarget,'Na pewno?',()=>api('/api/vercel/token',{method:'DELETE'}).then(()=>{toast('Odłączono Vercel');loadSites();}).catch(x=>toast(x.message)));
+  const fm=$('#siVForm');if(fm)fm.onsubmit=e=>{e.preventDefault();const t=$('#siVTok').value.trim();if(!t)return;busyBtn($('#siVBtn'),async()=>{const r=await api('/api/vercel/token',{method:'POST',body:{token:t}});toast('Podłączono Vercel: '+r.account);await loadSites(true);});};
+  drawSites();}
+function drawSites(){const d=SI.d;if(!d)return;const cnt=k=>d.items.filter(x=>k==='all'||x.source===k||(k==='bad'&&x.check&&x.check.level!=='ok')).length;
+  $('#siFilt').innerHTML=[['all','Wszystkie'],['bad','Problemy'],['vercel','Vercel'],['nginx','VPS'],['manual','Dodane'],['github','GitHub']].filter(([k])=>k==='all'||k==='bad'||cnt(k)).map(([k,l])=>`<button class="chip" data-sif="${k}" aria-pressed="${SI.f===k}">${l} <span class="dimn">${cnt(k)}</span></button>`).join('');
+  const f=d.items.filter(x=>SI.f==='all'||x.source===SI.f||(SI.f==='bad'&&x.check&&x.check.level!=='ok')).sort((a,b)=>{const r=x=>!x.url?3:!x.check?2:x.check.level==='bad'?0:x.check.level==='warn'?1:2;return r(a)-r(b)||(a.name||'').localeCompare(b.name||'');});
+  $('#siGrid').innerHTML=f.map(x=>{const c=x.check;const lv=!x.url?'off':!c?'off':c.level;const host=x.url?x.url.replace(/^https?:\/\//,''):'';
+    return `<div class="si-card ${lv}"><div class="si-top"><img class="si-fav" alt="" loading="lazy" src="${x.url?esc(x.url)+'/favicon.ico':''}" onerror="this.style.visibility='hidden'"><div class="si-t"><b>${esc(x.name||host)}</b>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" class="mono small">${esc(host)}</a>`:'<span class="small">brak podpiętej domeny</span>'}</div>${x.url?`<button class="gh-dl" data-sidel="${esc(x.url)}" title="Ukryj / usuń z listy" aria-label="Usuń ${esc(host)} z listy">×</button>`:''}</div>
+     <div class="si-st">${!x.url?pill('off','BEZ DOMENY'):!c?pill('off','NIESPRAWDZONA'):c.level==='ok'?pill('ok',`DZIAŁA · ${c.status}`):c.level==='warn'?pill('warn',`${c.status} · ${c.note||'ostrzeżenie'}`):pill('bad',c.status?`${c.status} · ${c.note||'błąd'}`:c.error||'NIE DZIAŁA')}${c&&c.ms!=null?`<span class="small mono">${c.ms} ms</span>`:''}${c&&c.certDays!=null?`<span class="small mono" style="${c.certDays<14?'color:var(--amber)':''}">SSL ${c.certDays} dni</span>`:''}</div>
+     ${c&&c.title?`<div class="small si-title">„${esc(c.title)}”</div>`:''}${c&&c.error&&c.status?`<div class="small" style="color:var(--red)">${esc(c.error)}</div>`:''}
+     <div class="si-meta small">${pill('off',SRC[x.source]||x.source)}${x.repo?`<span class="mono">${esc(x.repo)}</span>`:''}${x.deploy?`<span>wdrożenie: <b style="color:${/READY/i.test(x.deploy.state)?'var(--green)':/ERROR|CANCELED/i.test(x.deploy.state)?'var(--red)':'var(--amber)'}">${esc(x.deploy.state)}</b> ${x.deploy.at?ago(x.deploy.at):''}</span>`:''}</div></div>`;}).join('')||'<p class="muted">Brak stron. Dodaj adres powyżej albo podłącz Vercel.</p>';
+  $('#siFoot').innerHTML=d.hidden.length?`Ukrytych: ${d.hidden.length} <button class="btn ghost" id="siUnhide">Pokaż ukryte</button>`:'';const u=$('#siUnhide');if(u)u.onclick=()=>api('/api/sites/unhide',{method:'POST'}).then(()=>loadSites()).catch(x=>toast(x.message));}
+$('#siFilt').addEventListener('click',e=>{const b=e.target.closest('[data-sif]');if(!b)return;SI.f=b.dataset.sif;drawSites();});
+$('#siGrid').addEventListener('click',e=>{const b=e.target.closest('[data-sidel]');if(!b)return;conf(b,'?',()=>api('/api/sites?url='+encodeURIComponent(b.dataset.sidel),{method:'DELETE'}).then(()=>{toast('Usunięto z listy');loadSites();}).catch(x=>toast(x.message)));});
+$('#siAdd').onclick=e=>{const u=$('#siUrl').value.trim();if(!u){toast('Wpisz adres');return;}busyBtn(e.currentTarget,async()=>{await api('/api/sites',{method:'POST',body:{url:u,name:$('#siName').value.trim()}});$('#siUrl').value='';$('#siName').value='';toast('Dodano');await loadSites(true);});};
+$('#siCheck').onclick=e=>busyBtn(e.currentTarget,()=>loadSites(true));
+
+/* ---------- 27. Szukaj w kodzie ---------- */
+let CS=null;
+$('#csForm').onsubmit=e=>{e.preventDefault();const q=$('#csQ').value.trim();if(q.length<2){toast('Wpisz co najmniej 2 znaki');return;}
+  busyBtn($('#csBtn'),async()=>{$('#csOut').innerHTML='<div class="gh-load"><span class="gh-spin"></span>Szukam…</div>';const cs=$('#csCs').checked;
+    const r=await api('/api/codesearch?q='+encodeURIComponent(q)+'&where='+$('#csWhere').value+(cs?'&cs=1':''));CS={...r,cs};drawCS();});};
+function drawCS(){const r=CS,q=r.q,cs=r.cs;let h='';
+  if(r.vps){const by=new Map();for(const x of r.vps.results){const k=x.root;if(!by.has(k))by.set(k,new Map());const f=by.get(k);if(!f.has(x.rel))f.set(x.rel,[]);f.get(x.rel).push(x);}
+    h+=`<div class="cs-h"><h3>Na VPS</h3><span class="small">${r.vps.results.length} trafień w ${by.size} aplikacjach · przeszukano ${r.vps.searched} katalogów${r.vps.truncated?' · <span style="color:var(--amber)">pokazano pierwsze 400</span>':''}</span></div>`;
+    h+=by.size?[...by].map(([root,files])=>`<div class="cs-root"><div class="cs-rn mono">${esc(root)}</div>${[...files].map(([rel,ls])=>`<div class="cs-file"><div class="cs-fn mono">${esc(rel)}</div>${ls.map(x=>`<button class="cs-line" data-csf="${esc(x.file)}" data-csl="${x.line}"${x.hidden?' disabled':''}><span class="cs-ln">${x.line}</span><span class="cs-tx">${x.hidden?`<i class="muted">${esc(x.text)}</i>`:hl(x.text,q,cs)}</span></button>`).join('')}</div>`).join('')}</div>`).join(''):'<p class="muted">Nic nie znaleziono na VPS.</p>';}
+  if(r.gh){h+=`<div class="cs-h"><h3>Na GitHubie</h3><span class="small">${r.gh.error?'':`${r.gh.total??r.gh.results.length} trafień${r.gh.incomplete?' (niepełne)':''} · tylko gałęzie główne`}</span></div>`;
+    h+=r.gh.error?`<p style="color:var(--amber)">${esc(r.gh.error)}</p>`:r.gh.results.length?r.gh.results.map(x=>`<div class="cs-file"><div class="cs-fn"><span class="mono">${esc(x.repo)}</span> / <b class="mono">${esc(x.path)}</b> ${x.private?pill('off','PRYWATNE'):''} <button class="btn ghost cs-gh" data-csgh="${esc(x.repo)}" data-csp="${esc(x.path)}">Otwórz w zakładce GitHub</button></div>${x.hidden?'<div class="cs-line"><span class="cs-tx"><i class="muted">(plik z sekretami — treść ukryta)</i></span></div>':x.frags.map(f=>`<pre class="cs-frag">${hl(f,q,cs)}</pre>`).join('')}</div>`).join(''):'<p class="muted">Nic nie znaleziono na GitHubie.</p>';
+    h+='<p class="small">GitHub szuka tylko w gałęziach głównych i plikach do 384 KB; limit to ok. 10 wyszukiwań na minutę.</p>';}
+  $('#csOut').innerHTML=h;}
+$('#csOut').addEventListener('click',async e=>{const b=e.target.closest('[data-csf]');if(b){try{const r=await api('/api/codesearch/file?path='+encodeURIComponent(b.dataset.csf)+'&line='+b.dataset.csl);
+    gOpen(r.file.split('/').pop(),`${r.file} · linia ${r.line} z ${r.total}`,`<div class="gh-code" style="border-radius:12px;max-height:65vh"><pre class="gh-ln" aria-hidden="true">${r.lines.map((_,i)=>r.from+i).join('\n')}</pre><pre class="gh-pre">${r.lines.map((l,i)=>r.from+i===r.line?`<span class="cs-hit">${hl(l,CS.q,CS.cs)||' '}</span>`:esc(l)).join('\n')}</pre></div>`,null,'🔎');
+    setTimeout(()=>{const h=document.querySelector('.cs-hit');if(h)h.scrollIntoView({block:'center'});},30);}catch(x){toast(x.message);}return;}
+  const g=e.target.closest('[data-csgh]');if(g){location.hash='github';try{if(!GH.repos){GH.st=await api('/api/github/status');const rr=await api('/api/github/repos');GH.repos=rr.repos;}const x=GH.repos.find(z=>z.full===g.dataset.csgh);if(!x){toast('Nie znam tego repozytorium');return;}GH.view='repos';GH.repo=x;GH.ref=x.branch||'';GH.branches=[];ghHead();ghFile(g.dataset.csp).catch(er=>toast(er.message));}catch(er){toast(er.message);}}});
+
+/* ---------- 21. Sprzątanie ---------- */
+const CL={d:null,sel:new Map()};
+async function loadCleanup(){$('#clCats').innerHTML='<article class="card"><div class="gh-load"><span class="gh-spin"></span>Liczę, ile miejsca da się odzyskać… (do ok. minuty)</div></article>';
+  const d=await api('/api/cleanup');CL.d=d;CL.sel.clear();drawCleanup();}
+function clRow(i){const on=CL.sel.has(i.id);return `<label class="cl-row${on?' on':''}"><input type="checkbox" data-clid="${esc(i.id)}"${on?' checked':''}><span class="cl-nm"><span class="${i.op==='deleteDay'?'':'mono'}">${esc(i.name)}</span>${i.newest?' '+pill('warn','NAJNOWSZA'):''}${i.today?' '+pill('warn','DZISIAJ'):''}${i.app?` <span class="small">${esc(i.app)}</span>`:''}${i.note?`<span class="small cl-note">${esc(i.note)}</span>`:''}</span><span class="cl-sz mono">${fmtB(i.size)}</span><span class="cl-dt small">${i.mtime?fdt(i.mtime):''}</span><span class="cl-op">${i.op==='truncate'?pill('off','WYCZYŚĆ'):i.op==='cmd'?pill('off','WYCZYŚĆ'):pill('bad','USUŃ')}</span></label>`;}
+function drawCleanup(){const d=CL.d;if(!d)return;let gi=0;
+  $('#clCats').innerHTML=d.cats.map(c=>{const items=c.items||[],groups=c.groups||[];const tot=items.reduce((q,i)=>q+i.size,0)+groups.reduce((q,g)=>q+g.items.reduce((w,i)=>w+i.size,0),0);
+    return `<article class="card cl-cat" style="margin-top:12px"><div class="chead"><h3>${esc(c.title)}</h3><span class="meta">${fmtB(tot)}</span></div><p class="small" style="margin:-4px 0 10px">${esc(c.desc)}</p>
+    ${items.length?`<div class="cl-tools"><button class="chip" data-clall="${esc(c.key)}">Zaznacz wszystkie</button></div><div class="cl-list">${items.map(clRow).join('')}</div>`:''}
+    ${groups.map(g=>{const k='g'+(gi++);return `<div class="cl-grp"><div class="cl-gh"><span class="mono">${esc(g.dir)}</span>${g.app?` <span class="small">${esc(g.app)}</span>`:''} <span class="small">· ${g.items.length} poz. · ${fmtB(g.items.reduce((q,i)=>q+i.size,0))}</span></div>
+      <div class="cl-tools"><span class="small">Zostaw najnowsze:</span><input class="txt cl-keep" type="number" min="0" max="999" value="3" aria-label="Ile najnowszych zostawić" data-clkeepn="${k}"><button class="chip" data-clkeep="${k}">Zaznacz resztę</button><button class="chip" data-clgall="${k}">Zaznacz wszystkie</button><button class="chip" data-clgnone="${k}">Odznacz</button></div>
+      <div class="cl-list" data-clg="${k}">${g.items.map(clRow).join('')}</div></div>`;}).join('')}
+    ${!items.length&&!groups.length?'<p class="muted">Nic do sprzątnięcia.</p>':''}</article>`;}).join('');
+  clSum();}
+function clAll(){const a=[];for(const c of CL.d.cats){for(const i of c.items||[])a.push(i);for(const g of c.groups||[])for(const i of g.items)a.push(i);}return a;}
+function clSum(){const n=CL.sel.size,sz=[...CL.sel.values()].reduce((q,i)=>q+i.size,0);$('#clSel').textContent=n?`Zaznaczono ${n} poz.`:'Nic nie zaznaczono';$('#clSize').textContent=n?` · zwolni ok. ${fmtB(sz)}`:'';$('#clGo').disabled=!n;}
+function clSet(ids,on){const m=new Map(clAll().map(i=>[i.id,i]));for(const id of ids){if(on&&m.has(id))CL.sel.set(id,m.get(id));else CL.sel.delete(id);}
+  $$('#clCats input[data-clid]').forEach(x=>{const v=CL.sel.has(x.dataset.clid);x.checked=v;x.closest('.cl-row').classList.toggle('on',v);});clSum();}
+const clIdsIn=k=>$$(`[data-clg="${k}"] input[data-clid]`).map(x=>x.dataset.clid);
+$('#clCats').addEventListener('change',e=>{const x=e.target.closest('input[data-clid]');if(x)clSet([x.dataset.clid],x.checked);});
+$('#clCats').addEventListener('click',e=>{let b;
+  if((b=e.target.closest('[data-clall]'))){const c=CL.d.cats.find(z=>z.key===b.dataset.clall);clSet((c.items||[]).map(i=>i.id),true);}
+  else if((b=e.target.closest('[data-clgall]')))clSet(clIdsIn(b.dataset.clgall),true);
+  else if((b=e.target.closest('[data-clgnone]')))clSet(clIdsIn(b.dataset.clgnone),false);
+  else if((b=e.target.closest('[data-clkeep]'))){const k=b.dataset.clkeep,n=Math.max(0,+$(`[data-clkeepn="${k}"]`).value||0),ids=clIdsIn(k);clSet(ids.slice(0,n),false);clSet(ids.slice(n),true);}});
+$('#clNone').onclick=()=>clSet([...CL.sel.keys()],false);
+$('#clRef').onclick=e=>busyBtn(e.currentTarget,loadCleanup);
+$('#clGo').onclick=e=>{const n=CL.sel.size;if(!n)return;const items=[...CL.sel.values()];const bk=items.filter(i=>i.newest).length;
+  gOpen('Potwierdź sprzątanie',`${n} pozycji · ok. ${fmtB(items.reduce((q,i)=>q+i.size,0))}`,`${bk?`<p style="color:var(--amber)">Uwaga: zaznaczono ${bk} najnowszą kopię zapasową w katalogu.</p>`:''}<div class="cl-conf">${items.map(i=>`<div>${i.op==='delete'||i.op==='deleteDay'?'🗑':'🧹'} <span class="mono small">${esc(i.op==='deleteDay'?i.path+' · '+i.name:i.name)}</span> <span class="small">${fmtB(i.size)}</span></div>`).join('')}</div><p class="small">Usuniętych plików nie da się przywrócić.</p>`,
+   `<button class="btn ghost" data-gclose>Anuluj</button><button class="btn danger" id="clConfirm">Tak, usuń ${n} poz.</button>`,'🧹');
+  $('#clConfirm').onclick=ev=>busyBtn(ev.currentTarget,async()=>{const r=await api('/api/cleanup',{method:'POST',body:{ids:[...CL.sel.keys()]}});const bad=r.results.filter(x=>!x.ok);
+    gOpen('Sprzątanie zakończone',`Zwolniono ${fmtB(r.freed)} · ${r.ok}/${r.total} pozycji`,bad.length?`<p style="color:var(--amber)">Nie udało się:</p>${bad.map(x=>`<div class="small"><span class="mono">${esc(x.id.replace(/^\w+:/,''))}</span> — ${esc(x.msg)}</div>`).join('')}`:'<p>Wszystko zrobione. ✅</p>',null,'✅');loadCleanup().catch(()=>{});});};
+
 /* ---------- loader ---------- */
-const LOADERS={timeline:loadTimeline,keys:loadKeys,git:loadGit,env:loadEnv,dead:loadDead,system:loadSystem,storage:loadStorage,mysql:loadMysql,cron:loadCron,sessions:loadSessions,xaccounts:loadX,ssl:loadSSL,firebase:loadFirebase,logs:loadLogs,security:loadSecurity,github:loadGithub,skrypty:()=>SK.load(),ustawienia:loadSettings};
-const REFRESH={timeline:60000,git:120000,system:10000,storage:60000,mysql:15000,cron:60000,sessions:60000,xaccounts:120000,ssl:300000,firebase:120000,security:60000};
+const LOADERS={timeline:loadTimeline,keys:loadKeys,git:loadGit,env:loadEnv,dead:loadDead,system:loadSystem,storage:loadStorage,mysql:loadMysql,cron:loadCron,sessions:loadSessions,xaccounts:loadX,ssl:loadSSL,firebase:loadFirebase,logs:loadLogs,security:loadSecurity,github:loadGithub,runner:loadRunner,appmem:loadAppmem,restore:loadRestore,sites:()=>loadSites(),search:()=>{setTimeout(()=>$('#csQ').focus(),50);},cleanup:loadCleanup,skrypty:()=>SK.load(),ustawienia:loadSettings};
+const REFRESH={runner:60000,appmem:60000,sites:300000,timeline:60000,git:120000,system:10000,storage:60000,mysql:15000,cron:60000,sessions:60000,xaccounts:120000,ssl:300000,firebase:120000,security:60000};
 let tabTimer=null,dashTimer=null,booted=false;
 async function load(id){clearInterval(tabTimer);clearInterval(logTimer);
   if(id==='dashboard'){pollDash();return;}
